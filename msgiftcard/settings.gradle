@@ -1,1 +1,5 @@
 rootProject.name = 'msgiftcard'
+
+include ':common:common-cqrs'
+include ':msbalance'
+include ':msgiftcard'

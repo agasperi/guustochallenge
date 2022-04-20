@@ -1,9 +1,10 @@
 plugins {
+	id 'java'
+	id 'idea'
+	id 'eclipse'
+	id "com.diffplug.eclipse.apt" version "3.26.0"
 	id 'org.springframework.boot' version '2.6.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
-	id 'eclipse'
-	id 'idea'
 }
 
 group = 'com.aega.guusto'
@@ -21,10 +22,14 @@ repositories {
 }
 
 dependencies {
+    implementation project(':common:common-cqrs')
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+	annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 }

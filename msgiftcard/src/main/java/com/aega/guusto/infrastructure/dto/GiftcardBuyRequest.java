@@ -1,4 +1,4 @@
-package com.aega.guusto.infrastructure.model;
+package com.aega.guusto.infrastructure.dto;
 
 import java.util.List;
 import lombok.Builder;

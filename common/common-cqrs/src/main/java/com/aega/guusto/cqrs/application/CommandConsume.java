@@ -16,6 +16,6 @@ public interface CommandConsume<T> {
      *
      * @param t the input argument
      */
-    void accept(T t);
+    public void accept(T t);
 
 }

@@ -1,4 +1,4 @@
-package com.aega.guusto.infrastructure.model;
+package com.aega.guusto.infrastructure.dto;
 
 import java.util.List;
 import lombok.Builder;
@@ -15,6 +15,6 @@ public class GiftcardBuyResponse {
 
     private String clientId;
     private String requestId;
-    private List<GiftcardTransaction> transactions;
+    private List<GiftcardTransactionResponse> transactions;
 
 }

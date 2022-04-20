@@ -2,4 +2,4 @@ rootProject.name = 'guustochallenge'
 
 include ':common:common-cqrs'
 include ':msbalance'
-include ':msgiftcard' 
+include ':msgiftcard'

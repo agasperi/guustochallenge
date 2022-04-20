@@ -17,6 +17,6 @@ public interface CommandOperate<T, R> {
      * @param t the function argument
      * @return the function result
      */
-    R apply(T t);
+    public R apply(T t);
 
 }
